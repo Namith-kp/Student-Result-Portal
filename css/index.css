@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ECF0F1; /* Light Gray background */
+    color: #34495E; /* Dark Gray for text */
+}
+
+li {
+    list-style: none;
+}
+
+.container a{
+    text-decoration: none;
+    color: #2C3E50; /* Dark Blue for links */
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #ECF0F1; /* Dark Blue for links */
+    font-size: 1rem;
+}
+
+a:hover {
+    color: #18BC9C; /* Teal for link hover */
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #2C3E50; /* Dark Blue for header */
+    padding: 1em 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-left: 0.5em;
+    font-family: 'Montserrat', sans-serif;
+    color: #ECF0F1; /* Light Gray for logo */
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 0.5em;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: #18BC9C; /* Teal for buttons */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.action_btn:hover {
+    transform: scale(1.05);
+    color: #fff;
+}
+
+.action_btn:active {
+    transform: scale(0.95);
+}
+
+.hero {
+    height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ECF0F1; /* Light Gray for hero text */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/student_result_analysis/img/college.jpeg') no-repeat center center;
+    background-size: cover; /* Ensure the image covers the entire section */
+    filter: brightness(0.3); /* Adjust the brightness to create a dark overlay effect */
+    z-index: -1; /* Ensure the image is behind the text */
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #18BC9C; /* Light Gray for hero heading */
+    white-space: nowrap;
+    overflow: hidden;
+    /* border-right: 3px solid; */
+    font-size: 2.5em; /* Default font size for larger screens */
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.features, .about, .testimonials, .contact {
+    padding: 2em 0;
+    text-align: center;
+    background-color: #ECF0F1; /* Light Gray background for sections */
+    color: #34495E; /* Dark Gray for text */
+    margin-bottom: 1em;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.feature-box, .testimonial-box {
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    background-color: #FFFFFF; /* White background for boxes */
+    padding: 1em;
+    border-radius: 8px;
+    color: #34495E; /* Dark Gray for text */
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.feature-box:hover, .testimonial-box:hover {
+    transform: scale(1.05);
+}
+
+.testimonial-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+}
+
+.testimonial-box {
+    min-width: 300px;
+    flex: 0 0 auto;
+}
+
+footer {
+    background-color: #2C3E50; /* Dark Blue for footer */
+    color: #ECF0F1; /* Light Gray for footer text */
+    padding: 1em 0;
+    text-align: center;
+}
+
+footer p{
+    font-size: 0.8em;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 64px;
+    width: 300px;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 275px;
+}
+
+.dropdown_menu li {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 992px) {
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+   
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+}
+
+.wrapper {
+    height: 10vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+}
+  
+.typing-demo {
+    width: 103ch;
+    animation: typing 3s steps(32), blink.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid;
+    font-family: monospace;
+    font-size: 1em;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+      
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Responsive h2 with typing animation */
+.hero h2 {
+    font-size: 2.5em; /* Default font size for larger screens */
+}
+
+@media (max-width: 1200px) {
+    .hero h2 {
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero h2 {
+        font-size: 2em;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h2 {
+        font-size: 1.5em;
+    }
+    .hero p{
+        font-size: 1em;
+    }
+    
+}
+
+@media (max-width: 430px) {
+    .hero h2 {
+        font-size: 1.3em;
+    }
+    .hero p{
+        font-size: 0.9em;
+    }
+    
+}

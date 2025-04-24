@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('/student_result_analysis/img/college2.jpg');
+    background-size: cover; /* This makes the image cover the whole page */
+    background-position: center; /* This centers the image */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+}
+
+.content {
+    text-align: center;
+    color: rgb(147, 43, 43);
+    padding: 100px;
+}

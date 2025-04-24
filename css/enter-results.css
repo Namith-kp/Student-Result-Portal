@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #c5dcf4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(225deg, #4b79a1, #285b8a); /* Gradient background */
+    box-shadow: -19px 19px 40px rgba(0, 0, 0, 0.2),
+                19px -19px 40px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+}
+
+.form-container:hover {
+    background: linear-gradient(225deg, #4b79a1, #285b8a); /* Keep gradient same on hover */
+    box-shadow: -19px 19px 40px rgba(0, 0, 0, 0.3),
+                19px -19px 40px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-weight: 700;
+    color: #feffff;
+    font-size: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: 300px;
+    color: #eee;
+}
+
+input, select, button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    background: #c5dcf4;
+    border: 1px solid #55AD9B;
+    font-size: 16px;
+    width: auto;
+}
+
+button {
+    width: 100%;
+    padding: 0.45em;
+    background: #18BC9C;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 1em;
+    font-weight: 700;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+}
+button:hover {
+    background: #139279;
+    transform: scale(1.07);
+}
+
+.message {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+}
+.error {
+    color: red;
+    margin: 1em 0;
+}
+
+.success {
+    color: green;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+}
+a {
+    display: inline-block;
+    margin-top: 0.5em;
+    width: 18.5em;
+    padding: 0.25em;
+    background: #18BC9C;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 20px;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+}
+
+a:hover {
+    background: #139279;
+    transform: scale(1.07);
+}

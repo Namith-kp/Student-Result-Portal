@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    background: #c5dcf4; /* Light, soft background for better contrast and to match theme */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: auto;
+    text-align: center;
+    height: 100vh;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+html {
+    height: 100%;
+}
+
+.container {
+    border-radius: 20px;
+    background: linear-gradient(225deg, #4b79a1, #285b8a); /* Gradient background */
+    box-shadow: -19px 19px 40px rgba(0, 0, 0, 0.2),
+                19px -19px 40px rgba(0, 0, 0, 0.2);
+    padding: 2em;
+    width: auto;
+    max-width: 400px;
+    margin: 1em;
+    text-align: center;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    background: linear-gradient(225deg, #4b79a1, #285b8a); /* Keep gradient same on hover */
+    box-shadow: -19px 19px 40px rgba(0, 0, 0, 0.3),
+                19px -19px 40px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.message {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 1em;
+    filter: drop-shadow(2px 5px 20px rgba(2, 165, 241, 1));
+}
+h1{
+    font-size: 2.5em;
+}
+h2 {
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    font-weight: 700;
+    font-size: 35px;
+    color: #285b8a; /* Match the h2 color with theme */
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+    gap: 10px;
+    font-size: 15.8px;
+}
+
+.tab {
+    cursor: pointer;
+    color: #feffff;
+    padding: 0.5em 0.5em;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.tab:hover {
+    border-bottom: 2px solid #285b8a; /* Matching hover color */
+}
+
+.tab.active {
+    border-bottom: 2px solid #18BC9C; /* Matching active tab color */
+    font-weight: 700;
+}
+
+form {
+    display: none;
+}
+
+form.active {
+    display: block;
+}
+
+input[type="text"], input[type="password"], input[type="number"] {
+    width: 160px;
+    padding: 1em;
+    margin: 0.5em 0;
+    background: #ffffff; /* Light input background */
+    border: 1.5px solid #4b79a1; /* Border color to match theme */
+    border-radius: 20px;
+}
+
+button {
+    width: 23.8em;
+    padding: 0.5em;
+    background: #18BC9C; /* Button color to match theme */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 1em;
+    font-weight: 500;
+    font-size: medium;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #139279; /* Darker button color on hover */
+    transform: scale(1.07);
+}
+
+.error {
+    color: red;
+    margin: 1em 0;
+}
+
+.success {
+    color: #18BC9C;
+    margin: 1em 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+th, td {
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f9f9f9; /* Light background color for table headers */
+}
+
+a {
+    display: inline-block;
+    width: 23.5em;
+    margin-top: 1em;
+    padding: 0.25em;
+    background: #18BC9C; /* Link color to match theme */
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+}
+
+a:hover {
+    transform: scale(1.07);
+    background: #139279; /* Darker link color on hover */
+}
+
+i{
+    margin-right: 3px;
+}
+
+footer {
+    margin-top: 1em;
+}
+
+footer a {
+    color: #4b79a1; /* Footer link color to match theme */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.graph-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.graph {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.graph canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.chart-percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+@media (max-width: 992px) {
+    .container:hover {
+        display: block;
+    }
+}
+
+
+.hero h1 {
+    font-size: 2.5em; /* Default font size for larger screens */
+}
+
+@media (max-width: 1200px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 2.3em;
+    }
+    .container{
+        margin: 2em;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 430px) {
+    .tabs {
+        font-size: 11px;
+    }
+
+    input[type="text"], input[type="password"], input[type="number"]{
+        width: 100px;
+        font-size: 11px;
+    }
+
+    button{
+        width: 19.8em;
+        font-size: smaller;
+    }
+
+    a{
+        width: 19.5em;
+        font-size: smaller;
+    }
+
+    .container{
+        width: auto;
+    }
+}

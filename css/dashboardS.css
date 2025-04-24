@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    background: #c5dcf4; /* Light background color for better contrast */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: auto;
+    height: 100vh;
+    text-align: center;
+}
+
+html {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+    border-radius: 20px;
+    background: linear-gradient(225deg, #4b79a1, #285b8a); /* Gradient matching the index and login pages */
+    box-shadow: -19px 19px 40px rgba(0, 0, 0, 0.2),
+                19px -19px 40px rgba(0, 0, 0, 0.2);
+    margin: 2em;
+    width: auto;
+    max-width: 1200px;
+    height: auto;
+    max-height: 1200px;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+.left-container,
+.right-container {
+    padding: 2px;
+}
+
+.box {
+    background: #ffffff; /* White background for better contrast */
+    border-radius: 20px;
+    margin: 10px;
+    width: 450px;
+    max-height: 400px;
+    height: auto;
+    gap: 5px;
+}
+
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+    }
+    .box {
+        margin: 20px auto;
+    }
+}
+
+.charts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 50px;
+}
+
+.message {
+    margin-top: 1em;
+    font-size: 26px;
+    color: #285b8a; /* Matching color from the theme */
+    margin-bottom: 0.3em;
+}
+
+.chart-container {
+    margin-top: 2em;
+    margin-bottom: 3em;
+    width: 160px;
+    height: 160px;
+}
+
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 0.5em;
+    margin-top: 3em;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    background-color: #18BC9C;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.buttons button:hover {
+    background-color: #139279;
+    transform: scale(1.07);
+}
+
+.chart-container h1 {
+    margin-bottom: 2em;
+    margin-top: 0.5em;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.box h{
+    margin-bottom: 1em;
+    margin-top: 2em;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h1 {
+    margin-bottom: 0.8em;
+    margin-top: 1em;
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+}
+
+h2 {
+    /* display: flex; */
+    margin-bottom: 0.1em;
+    margin-top: 0.5em;
+    color: #285b8a;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+
+.welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-container h3 {
+    margin-bottom: 1px;
+    margin-top: 1px;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(6, 6, 6);
+    margin-right: 20px;
+    margin-left: 10px;
+    
+}
+.welcome-container h2 {
+    margin-bottom: 1px;
+    margin-top: 1px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #285b8a;
+    margin-right: 2px;
+    margin: 0;
+}
+
+.welcome-container img {
+    width: 50px;
+    border-radius: 50px;
+    margin-bottom: 0.5em;
+    margin-left: 50px;
+    margin-right: 10px;
+    margin: 0;
+}
+
+.bar-chart-container {
+    width: 360px;
+    margin: 0 auto;
+    margin-top: 1.5em;
+    height: 250px;
+}
+
+@media (max-width: 1200px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container{
+        margin: 2em;
+    }
+}
+
+@media (max-width: 395px) {
+    .chart-container h1 {
+        font-size: 13px;
+    }
+    h2 {
+        /* display: flex; */
+        margin-bottom: 0.1em;
+        margin-top: 3em;
+        font-size: 20px;
+    }
+    .container{
+        width: 330px;
+        margin: 0.5em;
+        padding: 1px;
+    }
+    .charts {
+        gap: 20px; 
+    }
+    .chart-container {
+        margin-top: 2em;
+        margin-bottom: 3em;
+        width: 90px;
+        height: 90px;
+    }
+    .bar-chart-container {
+        width: auto;
+        max-width: 300px;
+        margin: 0 auto;
+        margin-top: 1.5em;
+        height: 200px;
+    }
+    .box {
+        width: 300px;
+        max-height: 400px;
+        height: auto;
+        gap: 3px;
+    }
+    .box h{
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .welcome-container h3 {
+        font-size: 15px;
+        font-weight: 600;
+              
+    }
+
+    .welcome-container h2 {
+       
+        font-size: 15px;
+        font-weight: 600;
+        
+    }
+    .welcome-container img {
+        width: 30px;
+        
+    }
+    .welcome-container {
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 430px) {
+    .chart-container h1 {
+        font-size: 15px;
+    }
+    .charts{
+        gap: 30px;
+    }
+    h2 {
+        /* display: flex; */
+        margin-bottom: 0.1em;
+        margin-top: 3.5em;
+        font-size: 55px;
+        font-weight: 600;
+    }
+    .container{
+        width: 355px;
+        margin: 0.5em;
+        padding: 2px;
+    }
+    .chart-container {
+        margin-top: 2em;
+        margin-bottom: 3em;
+        width: 120px;
+        height: 120px;
+    }
+    .bar-chart-container {
+        width: auto;
+        max-width: 340px;
+        margin: 0 auto;
+        margin-top: 1.5em;
+        height: 240px;
+    }
+    .box {
+        width: 300px;
+        max-height: 400px;
+        height: auto;
+        gap: 5px;
+    }
+    .box h{
+        font-size: 18.5px;
+        font-weight: 600;
+    }
+
+    .welcome-container h3 {
+        font-size: 22px;
+        font-weight: 600;
+              
+    }
+
+    .welcome-container h2 {
+       
+        font-size: 22px;
+        font-weight: 600;
+        
+    }
+    .welcome-container img {
+        width: 35px;
+        
+    }
+    .welcome-container {
+        margin: 0;
+    }
+
+}

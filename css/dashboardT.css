@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    background: #c5dcf4;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: -webkit-fill-available;
+    height: 100vh;
+    margin: 0;
+    width:auto;
+    text-align: center; /* Center the text inside the flex items */
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(225deg, #4b79a1, #285b8a); /* Gradient background */
+    box-shadow: -19px 19px 40px rgba(0, 0, 0, 0.2),
+                19px -19px 40px rgba(0, 0, 0, 0.2);
+    margin: 0px auto;
+    width: auto;
+    max-width: 1200px;
+    height:auto;
+    max-height:400px;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.charts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px; /* Add spacing between charts */
+    margin-bottom: 50px;
+    border: 20px;
+}
+
+.message {
+    font-size:26px;
+    color: #333;
+    margin-bottom: 0.3em;
+}
+
+.chart-container {
+    /* flex: 1; */
+    margin-top: 3em;
+    margin-bottom: 1em;
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+}
+
+canvas {
+    width: 100% !important; /* Ensure canvas uses the full width of its container */
+    height: 100% !important; /* Ensure canvas uses the full height of its container */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 1px;
+    margin-top: 1em;
+    
+
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: #18BC9C;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out, transform 0.5s ease-in-out;
+    
+}
+
+.buttons button:hover {
+    background: #139279;
+    transform: scale(1.07);
+}
+
+.chart-container h1 {
+    /* display: flex; */
+    margin-bottom: 2px;
+    margin-top: 2px;
+    font-size: 13.84px;
+    font-weight: 600;
+}
+
+h2 {
+    /* display: flex; */
+    margin-bottom: 0.1em;
+    margin-top: 0.5em;
+    color: #285b8a;
+    font-size: 60px;
+    font-weight: 600;
+}
+h3 {
+    /* display: flex; */
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
+    font-size: 22px;
+    color: #feffff;
+    font-weight: 600;
+}
+h1 {
+    /* display: flex; */
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
+    font-size: 25px;
+    color: #feffff;
+    font-weight: 600;
+}
+h{
+    /* display: flex; */
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
+    font-size: 17px;
+    color: #eee;
+    font-weight: 300;
+}
+
+.welcome-container{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    
+    /* margin-top: 0.1em;
+    margin-bottom: 0.5em; */
+}
+.welcome-container h3 {
+    margin-bottom: 1px;
+    margin-top: 1px;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(6, 6, 6);
+    margin-right: 25px;
+    
+}
+.welcome-container h2 {
+    margin-bottom: 1px;
+    margin-top: 1px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #285b8a;
+    margin-right: 2px;
+    margin: 0;
+}
+
+/* .welcome-container img {
+    width: 50px;
+    /* height: 50px; */
+    /* size: 30px; */
+    /* display: flex; */
+    border-radius: 50px;
+    /* border: 0.5px solid rgb(90, 87, 87);
+    background-color: rgb(209, 221, 230); */
+    margin-bottom: 0.5em;
+    margin-left: 10px;
+    margin-right: 10px;
+} */
+
+.bar-chart-container {
+    width: auto; /* Adjust width as needed */
+     margin: 0 auto;
+ }
+
+ .table-container {
+    max-height: 300px; /* Set your desired height */
+    overflow-y: auto;
+    margin-bottom: 0.5em;
+    /* border-radius: 10px; */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    margin-bottom: 0.5em;
+}
+
+th, td {
+    padding: 0.5em;
+    border: 1px solid black;
+    text-align: center;
+}
+
+th {
+    background-color: #feffff;
+}
+
+.course-table {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.course-card {
+    min-width: 80px;
+    height: 50px;
+    background: #c5dcf4;
+    border: 1px solid #0F4C75;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.course-card strong {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.course-card .marks, .course-card .grade {
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+@media (max-width:992px) {
+
+    .container{
+        
+        width: 80%;
+    }
+
+    .table-container{
+        height: 600px;
+    }
+    
+}

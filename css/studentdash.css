@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    background: #55AD9B;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: -100%;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    width:100%;
+    height: -webkit-fill-available;
+    height: 100vh;
+    text-align: center; /* Center the text inside the flex items */
+}
+
+html{
+    height: -webkit-fill-available;
+}
+
+.container {
+    display: flex; 
+    background: #95D2B3;
+    padding: 20px;
+    justify-content: space-around;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 0px auto;
+    width: auto;
+    max-width: 1200px;
+    flex-direction: row;
+    flex-shrink: 5;
+    text-align: center;
+}
+
+.box {
+    background: #D8EFD3;
+    /* flex-direction: row; Grow to take available space */
+    margin: 10px ;
+    width: 450px;
+    gap: 5px
+    /* flex:2; */
+    height: 300px;
+    /* margin: 20px ; */
+    margin-top:1em;
+    border-radius: 20px;
+}
+
+@media (max-width:992px) {
+
+    .container{
+        flex-direction: column;
+    }
+    .box{
+        margin: 20px auto;
+        
+    }
+    
+}
+
+.charts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px; /* Add spacing between charts */
+    margin-bottom: 50px;
+    border: 20px;
+}
+
+.message {
+    font-size:26px;
+    color: #333;
+    margin-bottom: 0.3em;
+}
+
+.chart-container {
+    /* flex: 1; */
+    margin-top: 3em;
+    margin-bottom: 1em;
+    width: 160px; /* Adjust the width as needed */
+    height: 160px; /* Adjust the height as needed */
+}
+
+canvas {
+    width: 100% !important; /* Ensure canvas uses the full width of its container */
+    height: 100% !important; /* Ensure canvas uses the full height of its container */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 0.5em;
+    margin-top: 4em;
+    
+
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: #0F4C75;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+.buttons button:hover {
+    background-color: #3282B8;
+}
+
+.chart-container h1 {
+    /* display: flex; */
+    margin-bottom: 2px;
+    margin-top: 0.5em;
+    font-size: 13.2px;
+    font-weight: 1000;
+}
+
+h1 {
+    /* display: flex; */
+    margin-bottom: 0.5em;
+    margin-top: 2px;
+    font-size: 45px;
+    font-weight: 600;
+}
+h2 {
+    /* display: flex; */
+    margin-bottom: 0.3em;
+    margin-top: 0.5em;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.welcome-container{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    /* margin-bottom: 0.5em; */
+}
+.welcome-container h3 {
+    /* display: flex; */
+    margin-bottom: 1px;
+    margin-top: 1px;
+    /* margin-left: 25px; */
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 85px;
+
+}
+
+.welcome-container img {
+    width: 50px;
+    /* height: 50px; */
+    /* size: 30px; */
+    /* display: flex; */
+    border-radius: 50px;
+    /* border: 0.5px solid rgb(90, 87, 87);
+    background-color: rgb(209, 221, 230); */
+    margin-bottom: 0.5em;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.bar-chart-container {
+    width: 360px; /* Adjust width as needed */
+    margin: 0 auto;
+    margin-top: 0.5em;
+    height: 250px;
+ }
