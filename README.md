@@ -27,15 +27,19 @@ management.
     
 ## Screenshots
 - Home Page
+  
 ![App Screenshot](https://raw.githubusercontent.com/Namith-kp/Student-Result-Portal/main/assets/Homepage%20(2).png)
 
 - Login Page
+  
 ![App Screenshot](https://raw.githubusercontent.com/Namith-kp/Student-Result-Portal/main/assets/Loginpage.png)
 
 - Student Dashboard
+  
 ![App Screenshot](https://raw.githubusercontent.com/Namith-kp/Student-Result-Portal/main/assets/Dashboard.png)
 
 - Result Marksheet
+  
 ![App Screenshot](https://raw.githubusercontent.com/Namith-kp/Student-Result-Portal/main/assets/ResultMarksheet.png)
 
 ## 🔗 Links
