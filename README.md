@@ -25,7 +25,7 @@ management.
 
 
     
-## 📸 Screenshots
+## 📸 Demo / Screenshots
 - Home Page
   
 ![App Screenshot](https://raw.githubusercontent.com/Namith-kp/Student-Result-Portal/main/assets/Homepage%20(2).png)
