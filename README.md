@@ -1,11 +1,11 @@
 
-# Student Result Analysis System
+# 🚀 Student Result Analysis System
 
 Built a simple web-based student result analysis system with role-based access control, 
 Chart.js visual dashboards, and robust error handling for accurate academic data 
 management. 
 
-## Installation & Run Locally
+## 📦 Installation & Run Locally
 
 - Install XAMPP Server **[click here](https://www.apachefriends.org/download.html)**
 
@@ -25,7 +25,7 @@ management.
 
 
     
-## Screenshots
+## 📸 Screenshots
 - Home Page
   
 ![App Screenshot](https://raw.githubusercontent.com/Namith-kp/Student-Result-Portal/main/assets/Homepage%20(2).png)
